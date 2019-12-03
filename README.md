@@ -47,29 +47,31 @@ Analyses performed by Kim Roche and Lauren Smith
 
 #### WRAPPED DOWNSAMPLED EXPRESSION TIME SERIES DATA FOR P. falciparum:
 
-downsampled_{strain}_expression_wrapped_offset.csv
-                         Time-series RNA-seq in FPKM. Gene expression interpolated via PCHIP and wrapped to a lowest-error single cycle. Offset to a common starting point (~%50/50 troph-schizont transition)
+`downsampled_{strain}_expression_wrapped_offset.csv`
+
+ Time-series RNA-seq in FPKM. Gene expression interpolated via PCHIP and wrapped to a lowest-error single cycle. Offset to a common starting point (~%50/50 troph-schizont transition)
 
 #### TRUNCATED EXPRESSION TIME SERIES FOR MOUSE TISSUE DATA:
 
-{tissue}_in_phase_0_05.tsv
+`{tissue}_in_phase_0_05.tsv`
 
 
 #### GENELIST FOR MALARIA:
 
-allstrains_p25_genelist.txt
-                         Set of genes periodic in all strains. The "baseline" set of genes.
-
+`allstrains_p25_genelist.txt`
+ 
+ Set of genes periodic in all strains. The "baseline" set of genes.
 From this baseline set, peak time was transformed to "percent of cycle completed" based on wrapped expression data/wrapped staging data. 
 
-3D7_allstrain_outofphase_0.05_two.txt
-			Genes differing by < 5% of the cycle in at least TWO strains compared to 3D7. Filters for minimum mis-ordering reduce gene set size.
+`3D7_allstrain_outofphase_0.05_two.txt`
+
+Genes differing by < 5% of the cycle in at least TWO strains compared to 3D7. Filters for minimum mis-ordering reduce gene set size.
 
 
 #### GENELIST FOR MOUSE:
 
-mouse_gene_in_phase.txt
-            Genes differing by < 5% of the cycle in at least one tissue compared to liver. Filters for minimum mis-ordering reduce gene set size.
+`mouse_gene_in_phase.txt`
+ Genes differing by < 5% of the cycle in at least one tissue compared to liver. Filters for minimum mis-ordering reduce gene set size.
             
             
 # Shifted data files
