@@ -1,4 +1,4 @@
-#Dependencies:
+# Dependencies:
 - Python 3.7
 - matplotlib
 - numpy
@@ -6,13 +6,13 @@
 - https://github.com/breecummins/min_interval_posets.git
 
 
-#Analyses
+# Analyses
 This code is to repeat the partial ordering analysis of the malaria strain and mouse tissue data in An Intrinsic Oscillator Drives the Blood Stage Cycle of the Malaria Parasite, Plasmodium falciparum, Smith et al. (submitted Dec 2019).
 
 This computation is cpu, memory, and time intensive. It's recommended to be performed on a cluster.
 
 
-##To create the data and supplemental figures for the malaria strains, run
+## To create the data and supplemental figures for the malaria strains, run
 
 ```python malaria_scripts.py define_params_mal <number of cores>```
 
@@ -24,7 +24,7 @@ To make the values in the supplemental table, change directories into the result
 
 
 
-##To create the data and supplemental figures for the mouse tissues, run
+## To create the data and supplemental figures for the mouse tissues, run
 
 `python malaria_scripts.py define_params_mouse <number of cores>`
 
@@ -42,20 +42,20 @@ Then change directories into the results folder and run
 
 
 
-#Data files
+# Data files
 Analyses performed by Kim Roche and Lauren Smith
 
-####WRAPPED DOWNSAMPLED EXPRESSION TIME SERIES DATA FOR P. falciparum:
+#### WRAPPED DOWNSAMPLED EXPRESSION TIME SERIES DATA FOR P. falciparum:
 
 downsampled_{strain}_expression_wrapped_offset.csv
                          Time-series RNA-seq in FPKM. Gene expression interpolated via PCHIP and wrapped to a lowest-error single cycle. Offset to a common starting point (~%50/50 troph-schizont transition)
 
-####TRUNCATED EXPRESSION TIME SERIES FOR MOUSE TISSUE DATA:
+#### TRUNCATED EXPRESSION TIME SERIES FOR MOUSE TISSUE DATA:
 
 {tissue}_in_phase_0_05.tsv
 
 
-####GENELIST FOR MALARIA:
+#### GENELIST FOR MALARIA:
 
 allstrains_p25_genelist.txt
                          Set of genes periodic in all strains. The "baseline" set of genes.
@@ -66,13 +66,13 @@ From this baseline set, peak time was transformed to "percent of cycle completed
 			Genes differing by < 5% of the cycle in at least TWO strains compared to 3D7. Filters for minimum mis-ordering reduce gene set size.
 
 
-####GENELIST FOR MOUSE:
+#### GENELIST FOR MOUSE:
 
 mouse_gene_in_phase.txt
             Genes differing by < 5% of the cycle in at least one tissue compared to liver. Filters for minimum mis-ordering reduce gene set size.
             
             
-#Shifted data files
+# Shifted data files
 
 All files ending in `_shifted.tsv` were produced by the script `make_phase_shift.py` to define the baseline comparison in the manuscript. Rerunning
 
